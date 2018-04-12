@@ -1,0 +1,10 @@
+steps\Registration.class
+Base\BaseUtil.class
+steps\Registration$Register.class
+pages\LoginPage.class
+steps\LoginStep.class
+steps\LoginStep$User.class
+pages\RegistrationPage.class
+steps\Hook.class
+steps\Registration$Register2.class
+runner\TestRunner.class

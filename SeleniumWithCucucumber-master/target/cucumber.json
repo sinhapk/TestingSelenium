@@ -1,0 +1,516 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5134401952,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Login with correct username and password",
+        "description": "",
+        "id": "loginfeature;login-with-correct-username-and-password",
+        "after": [
+          {
+            "result": {
+              "duration": 186459713,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8017133800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "LoginStep.iNavigateToTheLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 452697310,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter the following for Login",
+            "match": {
+              "location": "LoginStep.iEnterTheFollowingForLogin(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ],
+                "line": 7
+              },
+              {
+                "cells": [
+                  "nshm9111339@gmail.com",
+                  "qwerty@123"
+                ],
+                "line": 8
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1313716472,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click login button",
+            "match": {
+              "location": "LoginStep.iClickLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 80118037,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should see the userform page",
+            "match": {
+              "location": "LoginStep.iShouldSeeTheUserformPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4062636752,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Login with correct username and password to fail",
+        "description": "",
+        "id": "loginfeature;login-with-correct-username-and-password-to-fail",
+        "after": [
+          {
+            "result": {
+              "duration": 198926168,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6460022843,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "LoginStep.iNavigateToTheLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 305611419,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I enter the following for Login",
+            "match": {
+              "location": "LoginStep.iEnterTheFollowingForLogin(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ],
+                "line": 15
+              },
+              {
+                "cells": [
+                  "admin",
+                  "adminpassword"
+                ],
+                "line": 16
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2116595662,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I click login button",
+            "match": {
+              "location": "LoginStep.iClickLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 61647080,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I should see the userform page wrongly",
+            "match": {
+              "location": "LoginStep.iShouldSeeTheUserformPageWrongly()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "LoginFeature",
+    "description": "This feature deals with the login functionality of the application",
+    "id": "loginfeature",
+    "keyword": "Feature",
+    "uri": "Login.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3902895758,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Registration with valid email address",
+        "description": "",
+        "id": "registrationfeature;registration-with-valid-email-address",
+        "after": [
+          {
+            "result": {
+              "duration": 317449372,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8303330041,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I navigate to the home page",
+            "match": {
+              "location": "Registration.iNavigateToTheHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 269571205,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter following to create an account",
+            "match": {
+              "location": "Registration.iEnterFollowingToCreateAnAccount(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "emailaddress"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "pankaj.sinha50@yahoo.in"
+                ],
+                "line": 9
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 178804290,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on createanaccount button",
+            "match": {
+              "location": "Registration.iClickOnCreateanaccountButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6826218360,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I enter the following",
+            "match": {
+              "location": "Registration.iEnterTheFollowing(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "title",
+                  "firstname",
+                  "lastname",
+                  "password",
+                  "addrcompany",
+                  "addraddress",
+                  "addrcity",
+                  "addrzipcode",
+                  "addrmobile",
+                  "addressalias"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "Mr",
+                  "Pankaj",
+                  "Sinha",
+                  "qwerty#123",
+                  "Wipro",
+                  "EC",
+                  "Bangalore",
+                  "90001",
+                  "7829737373",
+                  "testAddress"
+                ],
+                "line": 13
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 677865688,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I select date of birth",
+            "match": {
+              "location": "Registration.iSelectDateOfBirth(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "days",
+                  "months",
+                  "years"
+                ],
+                "line": 15
+              },
+              {
+                "cells": [
+                  "12",
+                  "4",
+                  "2018"
+                ],
+                "line": 16
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 356354505,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I select country and state",
+            "match": {
+              "location": "Registration.iSelectCountryAndState(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "state",
+                  "country"
+                ],
+                "line": 18
+              },
+              {
+                "cells": [
+                  "Alaska",
+                  "United States"
+                ],
+                "line": 19
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 931955970,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I click on register button",
+            "match": {
+              "location": "Registration.iClickOnRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 72388816,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I should see registration is successful",
+            "match": {
+              "location": "Registration.iShouldSeeRegistrationIsSuccessful()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3337579070,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Registration with invalid email address",
+        "description": "",
+        "id": "registrationfeature;registration-with-invalid-email-address",
+        "after": [
+          {
+            "result": {
+              "duration": 195984031,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12304942352,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I navigate to the home page",
+            "match": {
+              "location": "Registration.iNavigateToTheHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 190159379,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I enter following to create an account",
+            "match": {
+              "location": "Registration.iEnterFollowingToCreateAnAccount(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "emailaddress"
+                ],
+                "line": 26
+              },
+              {
+                "cells": [
+                  "abc.gmail.com"
+                ],
+                "line": 27
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 165743542,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I click on createanaccount button",
+            "match": {
+              "location": "Registration.iClickOnCreateanaccountButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 66210815,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I should see Invalid email address error message",
+            "match": {
+              "location": "Registration.iShouldSeeInvalidEmailAddressErrorMessage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "RegistrationFeature",
+    "description": "This feature deals with the login functionality of the application",
+    "id": "registrationfeature",
+    "keyword": "Feature",
+    "uri": "Registration.feature"
+  }
+]

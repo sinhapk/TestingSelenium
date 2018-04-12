@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>ExecuteAutomation</td>
+              <td>1</td>
+            <td>13 Apr 2018, 03:35</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Duration</th>
+            <th>Average</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">Hook.InitializeTest()</td>
+              <td>4</td>
+              <td class="duration" data-value="16437513532">16s 437ms</td>
+              <td class="duration" data-value="4109378383">4s 109ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hook.TearDownTest(Scenario)</td>
+              <td>4</td>
+              <td class="duration" data-value="898819284">898ms</td>
+              <td class="duration" data-value="224704821">224ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginStep.iClickLoginButton()</td>
+              <td>2</td>
+              <td class="duration" data-value="3430312134">3s 430ms</td>
+              <td class="duration" data-value="1715156067">1s 715ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginStep.iEnterTheFollowingForLogin(DataTable)</td>
+              <td>2</td>
+              <td class="duration" data-value="758308729">758ms</td>
+              <td class="duration" data-value="379154364">379ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginStep.iNavigateToTheLoginPage()</td>
+              <td>2</td>
+              <td class="duration" data-value="14477156643">14s 477ms</td>
+              <td class="duration" data-value="7238578321">7s 238ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginStep.iShouldSeeTheUserformPage()</td>
+              <td>1</td>
+              <td class="duration" data-value="80118037">080ms</td>
+              <td class="duration" data-value="80118037">080ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginStep.iShouldSeeTheUserformPageWrongly()</td>
+              <td>1</td>
+              <td class="duration" data-value="61647080">061ms</td>
+              <td class="duration" data-value="61647080">061ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Registration.iClickOnCreateanaccountButton()</td>
+              <td>2</td>
+              <td class="duration" data-value="344547832">344ms</td>
+              <td class="duration" data-value="172273916">172ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Registration.iClickOnRegisterButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="931955970">931ms</td>
+              <td class="duration" data-value="931955970">931ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Registration.iEnterFollowingToCreateAnAccount(DataTable)</td>
+              <td>2</td>
+              <td class="duration" data-value="459730584">459ms</td>
+              <td class="duration" data-value="229865292">229ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Registration.iEnterTheFollowing(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="6826218360">6s 826ms</td>
+              <td class="duration" data-value="6826218360">6s 826ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Registration.iNavigateToTheHomePage()</td>
+              <td>2</td>
+              <td class="duration" data-value="20608272393">20s 608ms</td>
+              <td class="duration" data-value="10304136196">10s 304ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Registration.iSelectCountryAndState(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="356354505">356ms</td>
+              <td class="duration" data-value="356354505">356ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Registration.iSelectDateOfBirth(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="677865688">677ms</td>
+              <td class="duration" data-value="677865688">677ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Registration.iShouldSeeInvalidEmailAddressErrorMessage()</td>
+              <td>1</td>
+              <td class="duration" data-value="66210815">066ms</td>
+              <td class="duration" data-value="66210815">066ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Registration.iShouldSeeRegistrationIsSuccessful()</td>
+              <td>1</td>
+              <td class="duration" data-value="72388816">072ms</td>
+              <td class="duration" data-value="72388816">072ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>16</td>
+            <td>28</td>
+            <td class="duration">1m 6s 487ms</td>
+            <td class="duration">2s 374ms</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
